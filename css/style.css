@@ -1,15 +1,27 @@
-html{
-    padding: 0;
+
+/* Layout styles */
+
+* {
     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body{
-    margin: 0;
+    padding-left: 280px;
+    box-sizing: border-box;
     font-family: 'Open Sans', serif;
+    font-size: 1em;
+    background-image: url("../img/bgt.png");
 }
  
 .navbar{
     background-color: #4c9b1f;
+    background-image: url("../img/bgtt.png");
+    
     margin: 0;
     position: fixed;
     top: 0;
@@ -20,6 +32,8 @@ body{
     color: #c3e2b0;
     text-transform: uppercase;
     font-weight: 600;
+
+    box-shadow: 3px 0px 10px rgb(0 0 0 / 0.2);
 
     display: flex;
     flex-direction: column;
@@ -58,10 +72,130 @@ body{
     border-radius: 50%;
     border: solid;
     border-width: 10px;
-    border-color: #6daa49;
+    border-color: rgba(109, 170, 73, 0.5);
 }
 
-.content{
-    width: 800px;
-    margin: auto;
+#content{
+    width: 100%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Page content styles */
+.container-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height: 100vh;
+    max-width: 1000px;
+    padding: 2em;
+
+    color: #656864;
+}
+
+.container-top {
+    max-width: 1000px;
+    padding: 2em;
+
+    color: #656864;
+}
+
+.container-horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+}
+
+a {
+    color: #4c9b1f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6daa49;
+}
+
+h1, h2, h3, h4{
+    color: #424441;
+    text-transform: uppercase;
+    font-family: 'Saira Extra Condensed', serif;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1.35rem;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-primary {
+    color: #4c9b1f;
+}
+
+.subheading {
+    margin-bottom: 0.5rem;
+    color: #797c77;
+}
+
+.date {
+    min-width: 18rem;
+    text-align: right !important;
+    flex-grow: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+    background-color: #4c9b1f;
+    color: #c3e2b0;
+    text-transform: uppercase;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+}
+.button:hover {
+    color: #ffffff;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.skills li {
+    list-style: none;
+    margin: 0px;
+}
+
+li {
+    margin-left: 1em;
+    
+}
+
+sup {
+    vertical-align: super;
 }

@@ -1,5 +1,11 @@
 function updateContent()
 {
-    $( "#content" ).load( "about.html" );
-    console.log("Here");
+    var hash = window.location.hash.substring(1) + ".html";
+    $( "#content" ).load(hash);
+}
+
+function defaultContent()
+{
+    window.location.hash = "#about";
+    updateContent();
 }
