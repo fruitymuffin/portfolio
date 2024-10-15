@@ -11,7 +11,7 @@
 }
 
 body{
-    padding-left: 280px;
+    padding-left: 240px;
     box-sizing: border-box;
     font-family: 'Open Sans', serif;
     font-size: 1.1em;
@@ -26,7 +26,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 280px;
+    width: 240px;
     height: 100vh;
 
     color: #c3e2b0;
